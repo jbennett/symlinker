@@ -61,7 +61,7 @@ class KSymlinker extends RecursiveIteratorIterator
         if(!file_exists($tgt))
 		{
           	exec("ln -sf $src $tgt");
-			echo $src.PHP_EOL."\t--> $tgt".PHP_EOL;
+			//echo $src.PHP_EOL."\t--> $tgt".PHP_EOL;
 		}
 	}
 }
